@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <KnowledgeBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Manifest name="AWS Microsoft Threat Modeling Template" id="cc62ebae-3748-431e-b1df-f4220dc9003f" version="1.0.0.21" author="rusakovichma@gmail.com" />
+  <Manifest name="AWS Microsoft Threat Modeling Template" id="cc62ebae-3748-431e-b1df-f4220dc9003f" version="1.0.0.22" author="rusakovichma@gmail.com" />
   <ThreatMetaData>
     <IsPriorityUsed>true</IsPriorityUsed>
     <IsStatusUsed>true</IsStatusUsed>
@@ -2519,7 +2519,7 @@
     </ThreatType>
     <ThreatType>
       <GenerationFilters>
-        <Include>target is '9354ae72-9876-4a38-840c-6a50961f08a0' and target.[Public Access Block] is 'Yes'</Include>
+        <Include>target is '9354ae72-9876-4a38-840c-6a50961f08a0'</Include>
         <Exclude />
       </GenerationFilters>
       <Id>74071046-bf11-4d4c-8001-a54b0d6c888c</Id>
@@ -2583,7 +2583,7 @@
     </ThreatType>
     <ThreatType>
       <GenerationFilters>
-        <Include>target is '9354ae72-9876-4a38-840c-6a50961f08a0' and target.[Public Access Block] is 'Yes'</Include>
+        <Include>target is '9354ae72-9876-4a38-840c-6a50961f08a0'</Include>
         <Exclude />
       </GenerationFilters>
       <Id>1283df41-668e-4d3f-9f16-2d974f6d8777</Id>
