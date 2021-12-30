@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <KnowledgeBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Manifest name="k8s-templates" id="665db89c-78c9-4924-9883-e3323299efd7" version="1.0.0.10" author="DESKTOP-72BTI0V\MähBär" />
+  <Manifest name="k8s-templates" id="665db89c-78c9-4924-9883-e3323299efd7" version="1.0.0.24" author="DESKTOP-72BTI0V\MähBär" />
   <ThreatMetaData>
     <IsPriorityUsed>true</IsPriorityUsed>
     <IsStatusUsed>true</IsStatusUsed>
@@ -24,7 +24,7 @@
       <ThreatMetaDatum>
         <Name>UserThreatShortDescription</Name>
         <Label>Short Description</Label>
-        <HideFromUI>false</HideFromUI>
+        <HideFromUI>true</HideFromUI>
         <Values>
           <Value />
         </Values>
@@ -63,6 +63,7 @@
         <Label>Priority</Label>
         <HideFromUI>false</HideFromUI>
         <Values>
+          <Value>Critical</Value>
           <Value>High</Value>
           <Value>Medium</Value>
           <Value>Low</Value>
@@ -70,6 +71,28 @@
         <Description>Priority</Description>
         <Id>17233603-4487-4c65-90d4-ff18adc6cb91</Id>
         <AttributeType>1</AttributeType>
+      </ThreatMetaDatum>
+      <ThreatMetaDatum>
+        <Name>2fafcb0c-ee36-4f6e-9e86-f008f027c849</Name>
+        <Label>Action Items</Label>
+        <HideFromUI>false</HideFromUI>
+        <Values>
+          <Value />
+        </Values>
+        <Description>Action items to remdiate</Description>
+        <Id>2fafcb0c-ee36-4f6e-9e86-f008f027c849</Id>
+        <AttributeType>0</AttributeType>
+      </ThreatMetaDatum>
+      <ThreatMetaDatum>
+        <Name>e7f3eb6b-2400-465f-9efd-cb921a1805ca</Name>
+        <Label>Comments</Label>
+        <HideFromUI>false</HideFromUI>
+        <Values>
+          <Value />
+        </Values>
+        <Description>Any Comments</Description>
+        <Id>e7f3eb6b-2400-465f-9efd-cb921a1805ca</Id>
+        <AttributeType>0</AttributeType>
       </ThreatMetaDatum>
     </PropertiesMetaData>
   </ThreatMetaData>
@@ -85,12 +108,6 @@
       <StrokeThickness>0</StrokeThickness>
       <ImageLocation>Centered on stencil</ImageLocation>
       <Attributes />
-      <StencilConstraints>
-        <StencilConstraint>
-          <SelectedStencilType>Any</SelectedStencilType>
-          <SelectedStencilConnection>Any</SelectedStencilConnection>
-        </StencilConstraint>
-      </StencilConstraints>
     </ElementType>
     <ElementType>
       <Name>Docker Data Flow</Name>
@@ -143,12 +160,6 @@
           </AttributeValues>
         </Attribute>
       </Attributes>
-      <StencilConstraints>
-        <StencilConstraint>
-          <SelectedStencilType>Any</SelectedStencilType>
-          <SelectedStencilConnection>Any</SelectedStencilConnection>
-        </StencilConstraint>
-      </StencilConstraints>
     </ElementType>
     <ElementType>
       <Name>Docker Engine</Name>
@@ -161,12 +172,6 @@
       <StrokeThickness>0</StrokeThickness>
       <ImageLocation>Centered on stencil</ImageLocation>
       <Attributes />
-      <StencilConstraints>
-        <StencilConstraint>
-          <SelectedStencilType>Any</SelectedStencilType>
-          <SelectedStencilConnection>Any</SelectedStencilConnection>
-        </StencilConstraint>
-      </StencilConstraints>
     </ElementType>
     <ElementType>
       <Name>Free Text Annotation</Name>
@@ -177,12 +182,6 @@
       <Representation>Annotation</Representation>
       <StrokeThickness>0</StrokeThickness>
       <Attributes />
-      <StencilConstraints>
-        <StencilConstraint>
-          <SelectedStencilType>Any</SelectedStencilType>
-          <SelectedStencilConnection>Any</SelectedStencilConnection>
-        </StencilConstraint>
-      </StencilConstraints>
     </ElementType>
   </GenericElements>
   <StandardElements>
@@ -212,12 +211,6 @@
           </AttributeValues>
         </Attribute>
       </Attributes>
-      <StencilConstraints>
-        <StencilConstraint>
-          <SelectedStencilType>74ff3339-05ce-4e01-92a8-c5f66809fdf5</SelectedStencilType>
-          <SelectedStencilConnection>Any</SelectedStencilConnection>
-        </StencilConstraint>
-      </StencilConstraints>
     </ElementType>
     <ElementType>
       <Name>Physical Machine Boundary</Name>
@@ -229,26 +222,7 @@
       <Representation>BorderBoundary</Representation>
       <StrokeThickness>0</StrokeThickness>
       <ImageLocation>Centered on stencil</ImageLocation>
-      <Attributes>
-        <Attribute>
-          <Id>b11906bd-0e8f-4fd9-b440-e29ac8f0be2b</Id>
-          <IsInherited>false</IsInherited>
-          <Name>3a6ae3ff-1bab-46d5-a562-577da99655a5</Name>
-          <DisplayName>New Property Attribute</DisplayName>
-          <Mode>Static</Mode>
-          <Type>List</Type>
-          <Inheritance>Virtual</Inheritance>
-          <AttributeValues>
-            <Value>New Property Attribute Value</Value>
-          </AttributeValues>
-        </Attribute>
-      </Attributes>
-      <StencilConstraints>
-        <StencilConstraint>
-          <SelectedStencilType>Any</SelectedStencilType>
-          <SelectedStencilConnection>Any</SelectedStencilConnection>
-        </StencilConstraint>
-      </StencilConstraints>
+      <Attributes />
     </ElementType>
     <ElementType>
       <Name>HTTP</Name>
@@ -261,12 +235,6 @@
       <StrokeThickness>0</StrokeThickness>
       <ImageLocation>Before label</ImageLocation>
       <Attributes />
-      <StencilConstraints>
-        <StencilConstraint>
-          <SelectedStencilType>Any</SelectedStencilType>
-          <SelectedStencilConnection>Any</SelectedStencilConnection>
-        </StencilConstraint>
-      </StencilConstraints>
     </ElementType>
     <ElementType>
       <Name>HTTPS</Name>
@@ -279,12 +247,6 @@
       <StrokeThickness>0</StrokeThickness>
       <ImageLocation>Before label</ImageLocation>
       <Attributes />
-      <StencilConstraints>
-        <StencilConstraint>
-          <SelectedStencilType>Any</SelectedStencilType>
-          <SelectedStencilConnection>Any</SelectedStencilConnection>
-        </StencilConstraint>
-      </StencilConstraints>
     </ElementType>
     <ElementType>
       <Name>Volume</Name>
@@ -311,12 +273,6 @@
           </AttributeValues>
         </Attribute>
       </Attributes>
-      <StencilConstraints>
-        <StencilConstraint>
-          <SelectedStencilType>Any</SelectedStencilType>
-          <SelectedStencilConnection>Any</SelectedStencilConnection>
-        </StencilConstraint>
-      </StencilConstraints>
     </ElementType>
     <ElementType>
       <Name>Docker Registry</Name>
@@ -333,7 +289,7 @@
           <Id>2dd84152-0651-4acf-92c1-43213daf6035</Id>
           <IsInherited>false</IsInherited>
           <Name>ac0ed89d-001d-46f0-9db1-ce1994e12e58</Name>
-          <DisplayName>Trusted</DisplayName>
+          <DisplayName>Trusted Registry</DisplayName>
           <Mode>Dynamic</Mode>
           <Type>List</Type>
           <Inheritance>Virtual</Inheritance>
@@ -343,12 +299,6 @@
           </AttributeValues>
         </Attribute>
       </Attributes>
-      <StencilConstraints>
-        <StencilConstraint>
-          <SelectedStencilType>Any</SelectedStencilType>
-          <SelectedStencilConnection>Any</SelectedStencilConnection>
-        </StencilConstraint>
-      </StencilConstraints>
     </ElementType>
     <ElementType>
       <Name>Dockerfile</Name>
@@ -360,13 +310,100 @@
       <Representation>Ellipse</Representation>
       <StrokeThickness>0</StrokeThickness>
       <ImageLocation>Centered on stencil</ImageLocation>
-      <Attributes />
-      <StencilConstraints>
-        <StencilConstraint>
-          <SelectedStencilType>Any</SelectedStencilType>
-          <SelectedStencilConnection>Any</SelectedStencilConnection>
-        </StencilConstraint>
-      </StencilConstraints>
+      <Attributes>
+        <Attribute>
+          <Id>922f3b8f-f785-47b7-84a0-16cb3f98fe7a</Id>
+          <IsInherited>false</IsInherited>
+          <Name>83a8087c-91b6-4b80-8d4a-bf1b070b1bab</Name>
+          <DisplayName>Cleanup Scripts present to reduce Attack Surface that remove users, packages, setuid and or setgid permissions</DisplayName>
+          <Mode>Dynamic</Mode>
+          <Type>List</Type>
+          <Inheritance>Virtual</Inheritance>
+          <AttributeValues>
+            <Value>Yes</Value>
+            <Value>No</Value>
+          </AttributeValues>
+        </Attribute>
+        <Attribute>
+          <Id>00c4e317-ea01-4082-9693-e4c7c5b6577b</Id>
+          <IsInherited>false</IsInherited>
+          <Name>fd629ba2-5b7c-4f96-ad4c-395a72e81e13</Name>
+          <DisplayName>Minimal Image</DisplayName>
+          <Mode>Dynamic</Mode>
+          <Type>List</Type>
+          <Inheritance>Virtual</Inheritance>
+          <AttributeValues>
+            <Value>Yes</Value>
+            <Value>No</Value>
+          </AttributeValues>
+        </Attribute>
+        <Attribute>
+          <Id>8ba87346-e5af-4dd7-87bf-ac93b1a2c735</Id>
+          <IsInherited>false</IsInherited>
+          <Name>89bc3a0b-94dc-4a9b-9bb5-f6abc16bfd46</Name>
+          <DisplayName>Verified Downloaded files</DisplayName>
+          <Mode>Dynamic</Mode>
+          <Type>List</Type>
+          <Inheritance>Virtual</Inheritance>
+          <AttributeValues>
+            <Value>Yes</Value>
+            <Value>No</Value>
+          </AttributeValues>
+        </Attribute>
+        <Attribute>
+          <Id>1d96b1b7-cef9-4615-a129-ea3e4e438ae7</Id>
+          <IsInherited>false</IsInherited>
+          <Name>2698f215-3f12-43e0-b73b-064274a01123</Name>
+          <DisplayName>Update Container</DisplayName>
+          <Mode>Dynamic</Mode>
+          <Type>List</Type>
+          <Inheritance>Virtual</Inheritance>
+          <AttributeValues>
+            <Value>Yes</Value>
+            <Value>No</Value>
+          </AttributeValues>
+        </Attribute>
+        <Attribute>
+          <Id>a56dd7ef-d0f6-42ff-8aa1-d1e7958cd018</Id>
+          <IsInherited>false</IsInherited>
+          <Name>4768ca42-3878-4926-b0c4-a5787a840ec0</Name>
+          <DisplayName>Run as unprilivied or non-root user</DisplayName>
+          <Mode>Dynamic</Mode>
+          <Type>List</Type>
+          <Inheritance>Virtual</Inheritance>
+          <AttributeValues>
+            <Value>Yes</Value>
+            <Value>No</Value>
+          </AttributeValues>
+        </Attribute>
+        <Attribute>
+          <Id>2b1fd319-9d6c-4e2d-b5ce-cc66f1b4ba70</Id>
+          <IsInherited>false</IsInherited>
+          <Name>ec897858-2014-4124-903c-4d22f77fe369</Name>
+          <DisplayName>Image build</DisplayName>
+          <Mode>Dynamic</Mode>
+          <Type>List</Type>
+          <Inheritance>Virtual</Inheritance>
+          <AttributeValues>
+            <Value>Homebuild</Value>
+            <Value>Trusted Registry like quay-io</Value>
+            <Value>Untrusted Registry like Dockerhub</Value>
+          </AttributeValues>
+        </Attribute>
+        <Attribute>
+          <Id>e01e4ae7-c48a-40c5-a419-364445084113</Id>
+          <IsInherited>false</IsInherited>
+          <Name>54cbcf35-76bb-4dab-9085-b1dcb57c53f6</Name>
+          <DisplayName>COPY and or ADD Statement used</DisplayName>
+          <Mode>Dynamic</Mode>
+          <Type>List</Type>
+          <Inheritance>Virtual</Inheritance>
+          <AttributeValues>
+            <Value>Yes</Value>
+            <Value>No</Value>
+          </AttributeValues>
+        </Attribute>
+      </Attributes>
     </ElementType>
     <ElementType>
       <Name>Image</Name>
@@ -378,13 +415,62 @@
       <Representation>Ellipse</Representation>
       <StrokeThickness>0</StrokeThickness>
       <ImageLocation>Centered on stencil</ImageLocation>
-      <Attributes />
-      <StencilConstraints>
-        <StencilConstraint>
-          <SelectedStencilType>Any</SelectedStencilType>
-          <SelectedStencilConnection>Any</SelectedStencilConnection>
-        </StencilConstraint>
-      </StencilConstraints>
+      <Attributes>
+        <Attribute>
+          <Id>3e961ddd-4bfc-4ae3-b5cd-ad9ed18169dc</Id>
+          <IsInherited>false</IsInherited>
+          <Name>12ad4e2e-2560-4bf9-bdd7-c0627787f011</Name>
+          <DisplayName>SHA256 Digest of Dependency</DisplayName>
+          <Mode>Dynamic</Mode>
+          <Type>List</Type>
+          <Inheritance>Virtual</Inheritance>
+          <AttributeValues>
+            <Value>Checked</Value>
+            <Value>Unchecked</Value>
+            <Value>verified</Value>
+            <Value>Checked and verified</Value>
+          </AttributeValues>
+        </Attribute>
+        <Attribute>
+          <Id>f6e51a0b-f95a-4ade-bbdf-a72c752a3942</Id>
+          <IsInherited>false</IsInherited>
+          <Name>905aa92d-70dd-4229-ab3c-ab2f770a133d</Name>
+          <DisplayName>Image Signature present</DisplayName>
+          <Mode>Dynamic</Mode>
+          <Type>List</Type>
+          <Inheritance>Virtual</Inheritance>
+          <AttributeValues>
+            <Value>Yes</Value>
+            <Value>No</Value>
+          </AttributeValues>
+        </Attribute>
+        <Attribute>
+          <Id>0a3df5ab-90c9-4918-bb39-62ae9b5837fe</Id>
+          <IsInherited>false</IsInherited>
+          <Name>efbe2bb6-fce8-4d98-be1d-e167128fd8cd</Name>
+          <DisplayName>Automated update &amp; patching</DisplayName>
+          <Mode>Dynamic</Mode>
+          <Type>List</Type>
+          <Inheritance>Virtual</Inheritance>
+          <AttributeValues>
+            <Value>Yes</Value>
+            <Value>No</Value>
+          </AttributeValues>
+        </Attribute>
+        <Attribute>
+          <Id>1db8e873-d959-484e-b7fb-19654adc63eb</Id>
+          <IsInherited>false</IsInherited>
+          <Name>1472a0e8-9348-468b-bb9d-09b3e5d5825b</Name>
+          <DisplayName>Secret baked in</DisplayName>
+          <Mode>Dynamic</Mode>
+          <Type>List</Type>
+          <Inheritance>Virtual</Inheritance>
+          <AttributeValues>
+            <Value>Yes</Value>
+            <Value>No</Value>
+          </AttributeValues>
+        </Attribute>
+      </Attributes>
     </ElementType>
     <ElementType>
       <Name>Host</Name>
@@ -401,7 +487,7 @@
           <Id>1eea319c-0384-480c-8537-38d79f39f4ea</Id>
           <IsInherited>false</IsInherited>
           <Name>0aecb1da-efa5-456d-b573-46c31ecda9dd</Name>
-          <DisplayName>Type</DisplayName>
+          <DisplayName>Host Type</DisplayName>
           <Mode>Dynamic</Mode>
           <Type>List</Type>
           <Inheritance>Virtual</Inheritance>
@@ -413,13 +499,21 @@
             <Value>Host Kernel</Value>
           </AttributeValues>
         </Attribute>
+        <Attribute>
+          <Id>866e5850-9ed4-448c-8dc6-9e54d3ea4df0</Id>
+          <IsInherited>false</IsInherited>
+          <Name>d8f16fac-ddd5-47e0-ac42-3e0128e1ae24</Name>
+          <DisplayName>Host Update</DisplayName>
+          <Mode>Dynamic</Mode>
+          <Type>List</Type>
+          <Inheritance>Virtual</Inheritance>
+          <AttributeValues>
+            <Value>Manual</Value>
+            <Value>Semi Automated</Value>
+            <Value>Automated</Value>
+          </AttributeValues>
+        </Attribute>
       </Attributes>
-      <StencilConstraints>
-        <StencilConstraint>
-          <SelectedStencilType>Any</SelectedStencilType>
-          <SelectedStencilConnection>Any</SelectedStencilConnection>
-        </StencilConstraint>
-      </StencilConstraints>
     </ElementType>
     <ElementType>
       <Name>Container</Name>
@@ -431,13 +525,46 @@
       <Representation>Ellipse</Representation>
       <StrokeThickness>0</StrokeThickness>
       <ImageLocation>Centered on stencil</ImageLocation>
-      <Attributes />
-      <StencilConstraints>
-        <StencilConstraint>
-          <SelectedStencilType>Any</SelectedStencilType>
-          <SelectedStencilConnection>Any</SelectedStencilConnection>
-        </StencilConstraint>
-      </StencilConstraints>
+      <Attributes>
+        <Attribute>
+          <Id>ebf8e651-1602-4dc3-b339-18b6e958ae87</Id>
+          <IsInherited>false</IsInherited>
+          <Name>6be33103-1732-4f84-b508-c7f6981dec4f</Name>
+          <DisplayName>Resource Limited</DisplayName>
+          <Mode>Dynamic</Mode>
+          <Type>List</Type>
+          <Inheritance>Virtual</Inheritance>
+          <AttributeValues>
+            <Value>Yes</Value>
+            <Value>No</Value>
+          </AttributeValues>
+        </Attribute>
+        <Attribute>
+          <Id>636b74bb-0dfc-4428-a663-dd571fe3b253</Id>
+          <IsInherited>false</IsInherited>
+          <Name>a161e63c-492f-426d-acfc-f5deaa74eca8</Name>
+          <DisplayName>Scanner step within CI-CD Pipeline</DisplayName>
+          <Mode>Static</Mode>
+          <Type>List</Type>
+          <Inheritance>Virtual</Inheritance>
+          <AttributeValues>
+            <Value>New Property Attribute Value</Value>
+          </AttributeValues>
+        </Attribute>
+        <Attribute>
+          <Id>0a085db1-bdcf-46c3-8512-547e031f6106</Id>
+          <IsInherited>false</IsInherited>
+          <Name>a7fe9e05-c25e-42c1-b31d-51bc9ab489ed</Name>
+          <DisplayName>Privileged run as root</DisplayName>
+          <Mode>Dynamic</Mode>
+          <Type>List</Type>
+          <Inheritance>Virtual</Inheritance>
+          <AttributeValues>
+            <Value>Yes</Value>
+            <Value>No</Value>
+          </AttributeValues>
+        </Attribute>
+      </Attributes>
     </ElementType>
     <ElementType>
       <Name>Secret</Name>
@@ -479,12 +606,6 @@
           </AttributeValues>
         </Attribute>
       </Attributes>
-      <StencilConstraints>
-        <StencilConstraint>
-          <SelectedStencilType>Any</SelectedStencilType>
-          <SelectedStencilConnection>Any</SelectedStencilConnection>
-        </StencilConstraint>
-      </StencilConstraints>
     </ElementType>
   </StandardElements>
   <ThreatCategories>
@@ -493,6 +614,10 @@
       <Id>ce792a0d-c47d-421e-896a-02a6857333f3</Id>
       <ShortDescription>https://github.com/OWASP/Docker-Security</ShortDescription>
       <LongDescription />
+    </ThreatCategory>
+    <ThreatCategory>
+      <Name>New Threat Category</Name>
+      <Id>e2ab8bf9-5a58-4b0c-8c9c-a6fc84d87e8e</Id>
     </ThreatCategory>
     <ThreatCategory>
       <Name>Threat Model - Based on Liz Rice's Container Secrutiy</Name>
@@ -507,5 +632,362 @@
       <LongDescription />
     </ThreatCategory>
   </ThreatCategories>
-  <ThreatTypes />
+  <ThreatTypes>
+    <ThreatType>
+      <GenerationFilters>
+        <Include>( source.0aecb1da-efa5-456d-b573-46c31ecda9dd is 'Host Application' or  source.0aecb1da-efa5-456d-b573-46c31ecda9dd is 'Host OS' or  source.0aecb1da-efa5-456d-b573-46c31ecda9dd is 'Host Kernel') or ( target.0aecb1da-efa5-456d-b573-46c31ecda9dd is 'Host Application' or  target.0aecb1da-efa5-456d-b573-46c31ecda9dd is 'Host OS' or  target.0aecb1da-efa5-456d-b573-46c31ecda9dd is 'Host Kernel') </Include>
+        <Exclude />
+      </GenerationFilters>
+      <Id>e3796c63-39ba-40c3-a61e-6112cdb3925d</Id>
+      <ShortTitle>Docker host and kernel security</ShortTitle>
+      <Category>ce792a0d-c47d-421e-896a-02a6857333f3</Category>
+      <RelatedCategory />
+      <Description>If host is compromised (Kernel exploits), the container isolation won’t make much of a difference</Description>
+      <PropertiesMetaData>
+        <ThreatMetaDatum>
+          <Name>UserThreatDescription</Name>
+          <Label>Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>If host is compromised (Kernel exploits), the container isolation won’t make much of a difference</Value>
+          </Values>
+          <Id>8a14d136-8830-46e4-8864-d9f4cff6e9fc</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>StateInformation</Name>
+          <Label>Justification</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Patch and Vulnerability Management</Value>
+          </Values>
+          <Id>f9b134cb-0266-462d-8a2b-b8c80a723053</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>Priority</Name>
+          <Label>Priority</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Critical</Value>
+          </Values>
+          <Description>Priority</Description>
+          <Id>17233603-4487-4c65-90d4-ff18adc6cb91</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>2fafcb0c-ee36-4f6e-9e86-f008f027c849</Name>
+          <Label>Action Items</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>1.Keep base system updated. 2. Use minimal, container-centric host systems (Alpine, CoreOS, RHEL Ubi). 3. Enforce Mandatory Access Control to prevent undesired operations -both on the host and on the containers- at the kernel level (Seccomp, AppArmor, SELinux)</Value>
+          </Values>
+          <Description>Action items to remdiate</Description>
+          <Id>2fafcb0c-ee36-4f6e-9e86-f008f027c849</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+      </PropertiesMetaData>
+    </ThreatType>
+    <ThreatType>
+      <GenerationFilters>
+        <Include>source.6be33103-1732-4f84-b508-c7f6981dec4f is 'No' or  target.6be33103-1732-4f84-b508-c7f6981dec4f is 'No'</Include>
+        <Exclude />
+      </GenerationFilters>
+      <Id>a1cbe22c-2ca5-4422-adb7-f4c5ce9905a2</Id>
+      <ShortTitle>Container resource abuse </ShortTitle>
+      <Category>ce792a0d-c47d-421e-896a-02a6857333f3</Category>
+      <RelatedCategory />
+      <Description>If resource limits are not configured, DoS can be caused by software bugs, design miscalculations or malware attacks</Description>
+      <PropertiesMetaData>
+        <ThreatMetaDatum>
+          <Name>UserThreatDescription</Name>
+          <Label>Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>If resource limits are not configured, DoS can be caused by software bugs, design miscalculations or malware attacks</Value>
+          </Values>
+          <Id>8a14d136-8830-46e4-8864-d9f4cff6e9fc</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>StateInformation</Name>
+          <Label>Justification</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Ops Resilience</Value>
+          </Values>
+          <Id>f9b134cb-0266-462d-8a2b-b8c80a723053</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>Priority</Name>
+          <Label>Priority</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Medium</Value>
+          </Values>
+          <Description>Priority</Description>
+          <Id>17233603-4487-4c65-90d4-ff18adc6cb91</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>2fafcb0c-ee36-4f6e-9e86-f008f027c849</Name>
+          <Label>Action Items</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>1. Control groups (cgroups) are a feature of the Linux kernel that allow you to limit the access processes and containers have to system resources 2. Load testing by replicating the production loads on pre-production 3. Implement Docker monitoring and alerting (like Prometheus/Grafana)</Value>
+          </Values>
+          <Description>Action items to remdiate</Description>
+          <Id>2fafcb0c-ee36-4f6e-9e86-f008f027c849</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+      </PropertiesMetaData>
+    </ThreatType>
+    <ThreatType>
+      <GenerationFilters>
+        <Include>( source.ac0ed89d-001d-46f0-9db1-ce1994e12e58 is 'No' or  target.ac0ed89d-001d-46f0-9db1-ce1994e12e58 is 'No') or ( target.905aa92d-70dd-4229-ab3c-ab2f770a133d is 'No' or  source.905aa92d-70dd-4229-ab3c-ab2f770a133d is 'No') or source.12ad4e2e-2560-4bf9-bdd7-c0627787f011 is 'Unchecked' or  target.12ad4e2e-2560-4bf9-bdd7-c0627787f011 is 'Unchecked'</Include>
+        <Exclude />
+      </GenerationFilters>
+      <Id>8737a121-4ac9-43ea-b66b-d4e24911fe3d</Id>
+      <ShortTitle>Container image authenticity</ShortTitle>
+      <Category>ce792a0d-c47d-421e-896a-02a6857333f3</Category>
+      <RelatedCategory />
+      <Description>Running unverified software and/or from sources not trusted explicitly</Description>
+      <PropertiesMetaData>
+        <ThreatMetaDatum>
+          <Name>UserThreatDescription</Name>
+          <Label>Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Running unverified software and/or from sources not trusted explicitly</Value>
+          </Values>
+          <Id>8a14d136-8830-46e4-8864-d9f4cff6e9fc</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>Priority</Name>
+          <Label>Priority</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>High</Value>
+          </Values>
+          <Description>Priority</Description>
+          <Id>17233603-4487-4c65-90d4-ff18adc6cb91</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>2fafcb0c-ee36-4f6e-9e86-f008f027c849</Name>
+          <Label>Action Items</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>1. Download images from trusted sources, like trusted Docker registry 2. Enable docker trust enforcement (export DOCKER_CONTENT_TRUST=1) 3. Enforce mandatory signature verification for any image that is going to be pulled or run</Value>
+          </Values>
+          <Description>Action items to remdiate</Description>
+          <Id>2fafcb0c-ee36-4f6e-9e86-f008f027c849</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+      </PropertiesMetaData>
+    </ThreatType>
+    <ThreatType>
+      <GenerationFilters>
+        <Include>(source is '2daedd0a-afd5-4700-810b-b4f97e42c0bf' and flow crosses '63d84cb5-8b84-4cd0-888e-321a70e4f4ed') or ( flow.ccf91f42-005a-4550-8239-3a4ca574b8ad is 'Yes' or flow crosses '63d84cb5-8b84-4cd0-888e-321a70e4f4ed' or  flow.048959ca-da27-4a59-b87d-fccc22d950f6 is 'Internet')</Include>
+        <Exclude />
+      </GenerationFilters>
+      <Id>ae11eac5-2382-4807-9092-36a22bf88ccb</Id>
+      <ShortTitle>Container network traffic</ShortTitle>
+      <Category>ce792a0d-c47d-421e-896a-02a6857333f3</Category>
+      <RelatedCategory />
+      <Description>Unsecured communication and gistries unrestrictedCommunications with Docker registries should be encrypted over TLS network traffic. By default all network traffic is allowed between containers on the same host. This increases the risk of unintended and unwanted disclosure of information to other containers</Description>
+      <PropertiesMetaData>
+        <ThreatMetaDatum>
+          <Name>UserThreatDescription</Name>
+          <Label>Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Unsecured communication and gistries unrestrictedCommunications with Docker registries should be encrypted over TLS network traffic. By default all network traffic is allowed between containers on the same host. This increases the risk of unintended and unwanted disclosure of information to other containers</Value>
+          </Values>
+          <Id>8a14d136-8830-46e4-8864-d9f4cff6e9fc</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>StateInformation</Name>
+          <Label>Justification</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Ops Resilience and Security Requirement</Value>
+          </Values>
+          <Id>f9b134cb-0266-462d-8a2b-b8c80a723053</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>Priority</Name>
+          <Label>Priority</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>High</Value>
+          </Values>
+          <Description>Priority</Description>
+          <Id>17233603-4487-4c65-90d4-ff18adc6cb91</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>2fafcb0c-ee36-4f6e-9e86-f008f027c849</Name>
+          <Label>Action Items</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>1. Communications with Docker registries should be encrypted over TLS 2. Only allow intercommunication that is necessary by linking specific containers 3. Deactivate the following Ports: Port 2375/TCP &amp; 2376/TCP: docker daemon and Port 5000/TCP: registry</Value>
+          </Values>
+          <Description>Action items to remdiate</Description>
+          <Id>2fafcb0c-ee36-4f6e-9e86-f008f027c849</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>e7f3eb6b-2400-465f-9efd-cb921a1805ca</Name>
+          <Label>Comments</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Docker Capabilities: https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities</Value>
+          </Values>
+          <Description>Any Comments</Description>
+          <Id>e7f3eb6b-2400-465f-9efd-cb921a1805ca</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+      </PropertiesMetaData>
+    </ThreatType>
+    <ThreatType>
+      <GenerationFilters>
+        <Include>source.4768ca42-3878-4926-b0c4-a5787a840ec0 is 'Yes' or target.efbe2bb6-fce8-4d98-be1d-e167128fd8cd is 'Yes' or source.a7fe9e05-c25e-42c1-b31d-51bc9ab489ed is 'Yes' or target.a7fe9e05-c25e-42c1-b31d-51bc9ab489ed is 'Yes' or flow crosses '8f8ed1c8-dab2-49d4-9542-254294b2e988' or  target.0aecb1da-efa5-456d-b573-46c31ecda9dd is 'Host Application' or  target.0aecb1da-efa5-456d-b573-46c31ecda9dd is 'Host Application' or  (target.d8f16fac-ddd5-47e0-ac42-3e0128e1ae24 is 'Manual' or target.d8f16fac-ddd5-47e0-ac42-3e0128e1ae24 is 'Semi Automated')</Include>
+        <Exclude />
+      </GenerationFilters>
+      <Id>b9edbb66-0d57-4aaf-868d-8ec07e56f2b3</Id>
+      <ShortTitle>Container breakout</ShortTitle>
+      <Category>ce792a0d-c47d-421e-896a-02a6857333f3</Category>
+      <RelatedCategory />
+      <Description>ge escalation</Description>
+      <PropertiesMetaData>
+        <ThreatMetaDatum>
+          <Name>UserThreatDescription</Name>
+          <Label>Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>ge escalation</Value>
+          </Values>
+          <Id>8a14d136-8830-46e4-8864-d9f4cff6e9fc</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>Priority</Name>
+          <Label>Priority</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Critical</Value>
+          </Values>
+          <Description>Priority</Description>
+          <Id>17233603-4487-4c65-90d4-ff18adc6cb91</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>2fafcb0c-ee36-4f6e-9e86-f008f027c849</Name>
+          <Label>Action Items</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>1. Drop capabilities that are not required 2. Monitor dangerous mountpoints from the host ( e.g., the Docker socket (/var/run/docker.sock), /proc, /dev OR e.g., the Docker socket (/var/run/docker.sock), /proc, /dev) 3. Create an isolated user namespace to limit the maximum privileges of the containers over the host to the equivalent of a regular user</Value>
+          </Values>
+          <Description>Action items to remdiate</Description>
+          <Id>2fafcb0c-ee36-4f6e-9e86-f008f027c849</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+      </PropertiesMetaData>
+    </ThreatType>
+    <ThreatType>
+      <GenerationFilters>
+        <Include>(target is '2b443889-abf6-426f-80e5-d21341ac048a' or  source is '2b443889-abf6-426f-80e5-d21341ac048a' or  target is 'af8254fe-5723-44ae-ba4b-f378d7a3621e' or  source is 'af8254fe-5723-44ae-ba4b-f378d7a3621e') or (source.ec897858-2014-4124-903c-4d22f77fe369 is 'Untrusted Registry like Dockerhub' or  target.ec897858-2014-4124-903c-4d22f77fe369 is 'Untrusted Registry like Dockerhub' or  source.ec897858-2014-4124-903c-4d22f77fe369 is 'Homebuild' or  target.ec897858-2014-4124-903c-4d22f77fe369 is 'Homebuild') or ( source.efbe2bb6-fce8-4d98-be1d-e167128fd8cd is 'No' or  target.efbe2bb6-fce8-4d98-be1d-e167128fd8cd is 'No')</Include>
+        <Exclude />
+      </GenerationFilters>
+      <Id>78241b6c-b8f8-433e-b9ee-7c43003d9916</Id>
+      <ShortTitle>Container image vulnerabilities</ShortTitle>
+      <Category>ce792a0d-c47d-421e-896a-02a6857333f3</Category>
+      <RelatedCategory />
+      <Description>Inconsistent update and patching leads to Security vulnerabilities present in the static image. A container is running version X.Y.Z of the web server which happens to suffer from a critical security flaw. This flaw has been fixed long ago upstream, but not in the local image</Description>
+      <PropertiesMetaData>
+        <ThreatMetaDatum>
+          <Name>UserThreatDescription</Name>
+          <Label>Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Inconsistent update and patching leads to Security vulnerabilities present in the static image. A container is running version X.Y.Z of the web server which happens to suffer from a critical security flaw. This flaw has been fixed long ago upstream, but not in the local image</Value>
+          </Values>
+          <Id>8a14d136-8830-46e4-8864-d9f4cff6e9fc</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>Priority</Name>
+          <Label>Priority</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Medium</Value>
+          </Values>
+          <Description>Priority</Description>
+          <Id>17233603-4487-4c65-90d4-ff18adc6cb91</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>2fafcb0c-ee36-4f6e-9e86-f008f027c849</Name>
+          <Label>Action Items</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>1. Update and rebuild images periodically to grab the newest security patches 2. Integrate a vulnerability scanner (Clair, Trivy) as a mandatory step of the CI/CD</Value>
+          </Values>
+          <Description>Action items to remdiate</Description>
+          <Id>2fafcb0c-ee36-4f6e-9e86-f008f027c849</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+      </PropertiesMetaData>
+    </ThreatType>
+    <ThreatType>
+      <GenerationFilters>
+        <Include>(source is 'd785ab0f-f255-4bc2-9bf0-4dd58cc304fe' or  target is 'd785ab0f-f255-4bc2-9bf0-4dd58cc304fe') or (target.4d614de8-b6af-49a2-8a05-57b933fca914 is 'Environment Variable' or  target.4d614de8-b6af-49a2-8a05-57b933fca914 is 'Environment Variable' )or  (source.1bc8a497-427a-4706-bbe3-9ef3267ddbbf is 'No' and  source.4d614de8-b6af-49a2-8a05-57b933fca914 is 'File' or target.1bc8a497-427a-4706-bbe3-9ef3267ddbbf is 'No' and  target.4d614de8-b6af-49a2-8a05-57b933fca914 is 'File')</Include>
+        <Exclude />
+      </GenerationFilters>
+      <Id>0fabe2a6-23a2-48b3-834c-7d7274cfb2de</Id>
+      <ShortTitle>Compromised secrets</ShortTitle>
+      <Category>ce792a0d-c47d-421e-896a-02a6857333f3</Category>
+      <RelatedCategory />
+      <Description>Compromised secrets</Description>
+      <PropertiesMetaData>
+        <ThreatMetaDatum>
+          <Name>UserThreatDescription</Name>
+          <Label>Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Compromised secrets</Value>
+          </Values>
+          <Id>8a14d136-8830-46e4-8864-d9f4cff6e9fc</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>Priority</Name>
+          <Label>Priority</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>High</Value>
+          </Values>
+          <Description>Priority</Description>
+          <Id>17233603-4487-4c65-90d4-ff18adc6cb91</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>2fafcb0c-ee36-4f6e-9e86-f008f027c849</Name>
+          <Label>Action Items</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>1. Do not use environment variables for secrets 2. Do not embed any secrets in the container image 3.Use a credentials/secrets storage (Vault)</Value>
+          </Values>
+          <Description>Action items to remdiate</Description>
+          <Id>2fafcb0c-ee36-4f6e-9e86-f008f027c849</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+      </PropertiesMetaData>
+    </ThreatType>
+  </ThreatTypes>
 </KnowledgeBase>
