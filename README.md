@@ -8,4 +8,8 @@ Some tiny Templates containing Stencils and Threats with some tiny examples for 
 * Examples based on the provided templates
 
 ### Next Steps
-
+1. More Threats
+2. Best Practices as a Collection on my personal page as a tutorial/guide
+3. More Container Security related threats, best practices etc.
+4. Nicer samples
+5. k8s templates as an addidtion to the docker threats. This will take ages since it's huge 
