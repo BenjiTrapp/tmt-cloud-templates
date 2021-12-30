@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <KnowledgeBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Manifest name="k8s-templates" id="665db89c-78c9-4924-9883-e3323299efd7" version="1.0.0.8" author="DESKTOP-72BTI0V\MähBär" />
+  <Manifest name="k8s-templates" id="665db89c-78c9-4924-9883-e3323299efd7" version="1.0.0.10" author="DESKTOP-72BTI0V\MähBär" />
   <ThreatMetaData>
     <IsPriorityUsed>true</IsPriorityUsed>
     <IsStatusUsed>true</IsStatusUsed>
@@ -85,6 +85,12 @@
       <StrokeThickness>0</StrokeThickness>
       <ImageLocation>Centered on stencil</ImageLocation>
       <Attributes />
+      <StencilConstraints>
+        <StencilConstraint>
+          <SelectedStencilType>Any</SelectedStencilType>
+          <SelectedStencilConnection>Any</SelectedStencilConnection>
+        </StencilConstraint>
+      </StencilConstraints>
     </ElementType>
     <ElementType>
       <Name>Docker Data Flow</Name>
@@ -137,6 +143,12 @@
           </AttributeValues>
         </Attribute>
       </Attributes>
+      <StencilConstraints>
+        <StencilConstraint>
+          <SelectedStencilType>Any</SelectedStencilType>
+          <SelectedStencilConnection>Any</SelectedStencilConnection>
+        </StencilConstraint>
+      </StencilConstraints>
     </ElementType>
     <ElementType>
       <Name>Docker Engine</Name>
@@ -149,6 +161,12 @@
       <StrokeThickness>0</StrokeThickness>
       <ImageLocation>Centered on stencil</ImageLocation>
       <Attributes />
+      <StencilConstraints>
+        <StencilConstraint>
+          <SelectedStencilType>Any</SelectedStencilType>
+          <SelectedStencilConnection>Any</SelectedStencilConnection>
+        </StencilConstraint>
+      </StencilConstraints>
     </ElementType>
     <ElementType>
       <Name>Free Text Annotation</Name>
@@ -159,6 +177,12 @@
       <Representation>Annotation</Representation>
       <StrokeThickness>0</StrokeThickness>
       <Attributes />
+      <StencilConstraints>
+        <StencilConstraint>
+          <SelectedStencilType>Any</SelectedStencilType>
+          <SelectedStencilConnection>Any</SelectedStencilConnection>
+        </StencilConstraint>
+      </StencilConstraints>
     </ElementType>
   </GenericElements>
   <StandardElements>
@@ -188,6 +212,12 @@
           </AttributeValues>
         </Attribute>
       </Attributes>
+      <StencilConstraints>
+        <StencilConstraint>
+          <SelectedStencilType>74ff3339-05ce-4e01-92a8-c5f66809fdf5</SelectedStencilType>
+          <SelectedStencilConnection>Any</SelectedStencilConnection>
+        </StencilConstraint>
+      </StencilConstraints>
     </ElementType>
     <ElementType>
       <Name>Physical Machine Boundary</Name>
@@ -213,6 +243,12 @@
           </AttributeValues>
         </Attribute>
       </Attributes>
+      <StencilConstraints>
+        <StencilConstraint>
+          <SelectedStencilType>Any</SelectedStencilType>
+          <SelectedStencilConnection>Any</SelectedStencilConnection>
+        </StencilConstraint>
+      </StencilConstraints>
     </ElementType>
     <ElementType>
       <Name>HTTP</Name>
@@ -225,6 +261,12 @@
       <StrokeThickness>0</StrokeThickness>
       <ImageLocation>Before label</ImageLocation>
       <Attributes />
+      <StencilConstraints>
+        <StencilConstraint>
+          <SelectedStencilType>Any</SelectedStencilType>
+          <SelectedStencilConnection>Any</SelectedStencilConnection>
+        </StencilConstraint>
+      </StencilConstraints>
     </ElementType>
     <ElementType>
       <Name>HTTPS</Name>
@@ -237,6 +279,12 @@
       <StrokeThickness>0</StrokeThickness>
       <ImageLocation>Before label</ImageLocation>
       <Attributes />
+      <StencilConstraints>
+        <StencilConstraint>
+          <SelectedStencilType>Any</SelectedStencilType>
+          <SelectedStencilConnection>Any</SelectedStencilConnection>
+        </StencilConstraint>
+      </StencilConstraints>
     </ElementType>
     <ElementType>
       <Name>Volume</Name>
@@ -248,7 +296,27 @@
       <Representation>Ellipse</Representation>
       <StrokeThickness>0</StrokeThickness>
       <ImageLocation>Centered on stencil</ImageLocation>
-      <Attributes />
+      <Attributes>
+        <Attribute>
+          <Id>a74f88fa-cb3e-4bb3-9f86-fbd23aef3d62</Id>
+          <IsInherited>false</IsInherited>
+          <Name>1bc8a497-427a-4706-bbe3-9ef3267ddbbf</Name>
+          <DisplayName>Encrypted Volume</DisplayName>
+          <Mode>Dynamic</Mode>
+          <Type>List</Type>
+          <Inheritance>Virtual</Inheritance>
+          <AttributeValues>
+            <Value>Yes</Value>
+            <Value>No</Value>
+          </AttributeValues>
+        </Attribute>
+      </Attributes>
+      <StencilConstraints>
+        <StencilConstraint>
+          <SelectedStencilType>Any</SelectedStencilType>
+          <SelectedStencilConnection>Any</SelectedStencilConnection>
+        </StencilConstraint>
+      </StencilConstraints>
     </ElementType>
     <ElementType>
       <Name>Docker Registry</Name>
@@ -275,6 +343,12 @@
           </AttributeValues>
         </Attribute>
       </Attributes>
+      <StencilConstraints>
+        <StencilConstraint>
+          <SelectedStencilType>Any</SelectedStencilType>
+          <SelectedStencilConnection>Any</SelectedStencilConnection>
+        </StencilConstraint>
+      </StencilConstraints>
     </ElementType>
     <ElementType>
       <Name>Dockerfile</Name>
@@ -287,6 +361,12 @@
       <StrokeThickness>0</StrokeThickness>
       <ImageLocation>Centered on stencil</ImageLocation>
       <Attributes />
+      <StencilConstraints>
+        <StencilConstraint>
+          <SelectedStencilType>Any</SelectedStencilType>
+          <SelectedStencilConnection>Any</SelectedStencilConnection>
+        </StencilConstraint>
+      </StencilConstraints>
     </ElementType>
     <ElementType>
       <Name>Image</Name>
@@ -299,6 +379,12 @@
       <StrokeThickness>0</StrokeThickness>
       <ImageLocation>Centered on stencil</ImageLocation>
       <Attributes />
+      <StencilConstraints>
+        <StencilConstraint>
+          <SelectedStencilType>Any</SelectedStencilType>
+          <SelectedStencilConnection>Any</SelectedStencilConnection>
+        </StencilConstraint>
+      </StencilConstraints>
     </ElementType>
     <ElementType>
       <Name>Host</Name>
@@ -328,6 +414,12 @@
           </AttributeValues>
         </Attribute>
       </Attributes>
+      <StencilConstraints>
+        <StencilConstraint>
+          <SelectedStencilType>Any</SelectedStencilType>
+          <SelectedStencilConnection>Any</SelectedStencilConnection>
+        </StencilConstraint>
+      </StencilConstraints>
     </ElementType>
     <ElementType>
       <Name>Container</Name>
@@ -340,6 +432,12 @@
       <StrokeThickness>0</StrokeThickness>
       <ImageLocation>Centered on stencil</ImageLocation>
       <Attributes />
+      <StencilConstraints>
+        <StencilConstraint>
+          <SelectedStencilType>Any</SelectedStencilType>
+          <SelectedStencilConnection>Any</SelectedStencilConnection>
+        </StencilConstraint>
+      </StencilConstraints>
     </ElementType>
     <ElementType>
       <Name>Secret</Name>
@@ -371,7 +469,7 @@
           <Id>cc316e09-b317-48eb-8c3b-79c9692d7684</Id>
           <IsInherited>false</IsInherited>
           <Name>2e61c6eb-f433-4f1e-8947-8392e3eff8a7</Name>
-          <DisplayName>Encrypted</DisplayName>
+          <DisplayName>Encrypted Secret</DisplayName>
           <Mode>Dynamic</Mode>
           <Type>List</Type>
           <Inheritance>Virtual</Inheritance>
@@ -381,6 +479,12 @@
           </AttributeValues>
         </Attribute>
       </Attributes>
+      <StencilConstraints>
+        <StencilConstraint>
+          <SelectedStencilType>Any</SelectedStencilType>
+          <SelectedStencilConnection>Any</SelectedStencilConnection>
+        </StencilConstraint>
+      </StencilConstraints>
     </ElementType>
   </StandardElements>
   <ThreatCategories>
@@ -388,14 +492,19 @@
       <Name>OWASP Container Security</Name>
       <Id>ce792a0d-c47d-421e-896a-02a6857333f3</Id>
       <ShortDescription>https://github.com/OWASP/Docker-Security</ShortDescription>
+      <LongDescription />
     </ThreatCategory>
     <ThreatCategory>
       <Name>Threat Model - Based on Liz Rice's Container Secrutiy</Name>
       <Id>dc5f28f7-d779-4e34-a796-b0c74064d0f5</Id>
+      <ShortDescription />
+      <LongDescription />
     </ThreatCategory>
     <ThreatCategory>
       <Name>Dockerfile Best Practices</Name>
       <Id>bf34cc35-3f23-431b-9ca0-64e2aff0657f</Id>
+      <ShortDescription />
+      <LongDescription />
     </ThreatCategory>
   </ThreatCategories>
   <ThreatTypes />
