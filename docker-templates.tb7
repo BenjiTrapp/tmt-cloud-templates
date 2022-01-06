@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <KnowledgeBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Manifest name="docker-templates" id="665db89c-78c9-4924-9883-e3323299efd7" version="1.0.0.31" author="DESKTOP-72BTI0V\MähBär" />
+  <Manifest name="docker-templates" id="665db89c-78c9-4924-9883-e3323299efd7" version="1.0.0.31" author="Der Benji" />
   <ThreatMetaData>
     <IsPriorityUsed>true</IsPriorityUsed>
     <IsStatusUsed>true</IsStatusUsed>

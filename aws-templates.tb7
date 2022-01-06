@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <KnowledgeBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Manifest name="AWS Microsoft Threat Modeling Template" id="cc62ebae-3748-431e-b1df-f4220dc9003f" version="1.0.0.25" author="rusakovichma@gmail.com" />
+  <Manifest name="AWS Microsoft Threat Modeling Template" id="cc62ebae-3748-431e-b1df-f4220dc9003f" version="1.0.0.25" author="Der Benji" />
   <ThreatMetaData>
     <IsPriorityUsed>true</IsPriorityUsed>
     <IsStatusUsed>true</IsStatusUsed>
