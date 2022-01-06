@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <KnowledgeBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Manifest name="Kubernetes Template" id="cc62ebae-3748-431e-b1df-f4220dc9003f" version="1.0.0.9" author="Rahul Jadhav, Accuknox" />
+  <Manifest name="K8s Templates" id="cc62ebae-3748-431e-b1df-f4220dc9003f" version="1.0.0.9" author="Der Benji" />
   <ThreatMetaData>
     <IsPriorityUsed>true</IsPriorityUsed>
     <IsStatusUsed>true</IsStatusUsed>
